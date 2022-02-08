@@ -1,0 +1,5 @@
+Credentials cache: API:E6744582-072A-42AA-86EE-D09E5596E6F7
+        Principal: scaglaya@42KOCAELI.COM.TR
+
+  Issued                Expires               Principal
+Feb  8 09:48:14 2022  Feb  8 19:48:06 2022  krbtgt/42KOCAELI.COM.TR@42KOCAELI.COM.TR
