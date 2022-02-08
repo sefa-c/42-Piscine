@@ -1,1 +1,1 @@
-git status --ignored -s | grep '!!' |-d ' ' -f 5
+git status --ignored -s | grep '!!' |cut -d ' ' -f 2
