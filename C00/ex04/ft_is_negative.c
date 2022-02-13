@@ -6,7 +6,7 @@
 /*   By: scaglaya <scaglaya@student.42.tr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/13 16:57:27 by scaglaya          #+#    #+#             */
-/*   Updated: 2022/02/13 17:23:07 by scaglaya         ###   ########.fr       */
+/*   Updated: 2022/02/13 18:35:42 by scaglaya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -22,9 +22,4 @@ void	ft_is_negative(int s)
 		ft_putchar('N');
 	else
 		ft_putchar('P');
-}
-
-int	main(void)
-{
-	ft_is_negative('s');
 }	

@@ -6,7 +6,7 @@
 /*   By: scaglaya <scaglaya@student.42.tr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 15:46:01 by scaglaya          #+#    #+#             */
-/*   Updated: 2022/02/13 13:12:00 by scaglaya         ###   ########.fr       */
+/*   Updated: 2022/02/13 18:32:31 by scaglaya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -16,14 +16,14 @@ void	ft_putchar(char x)
 	write(1, &x, 1);
 }
 
-void	ft_print_alphabet(void)
+void	ft_print_alphabets(void)
 {
-	char	a;
+	char	y;
 
-	a = 'a';
+	y = 'a';
 	while (a <= 'z')
 	{
-		ft_putchar(a);
+		ft_putchar(y);
 		a++;
 	}
 }

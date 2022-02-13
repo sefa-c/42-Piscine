@@ -6,7 +6,7 @@
 /*   By: scaglaya <scaglaya@student.42.tr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/13 16:01:12 by scaglaya          #+#    #+#             */
-/*   Updated: 2022/02/13 16:53:35 by scaglaya         ###   ########.fr       */
+/*   Updated: 2022/02/13 18:34:36 by scaglaya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -26,9 +26,4 @@ void	ft_print_numbers(void)
 		ft_putchar(sayilar);
 		sayilar++;
 	}	
-}
-
-int	main(void)
-{
-	ft_print_numbers();
 }

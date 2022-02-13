@@ -6,7 +6,7 @@
 /*   By: scaglaya <scaglaya@student.42.tr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 15:46:01 by scaglaya          #+#    #+#             */
-/*   Updated: 2022/02/13 15:52:39 by scaglaya         ###   ########.fr       */
+/*   Updated: 2022/02/13 18:33:34 by scaglaya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -18,17 +18,12 @@ void	ft_putchar(char x)
 
 void	ft_reverse_print_alphabet(void)
 {
-	char	a;
+	char	y;
 
-	a = 'z';
-	while (a >= 'a')
+	y = 'z';
+	while (y >= 'a')
 	{
-		ft_putchar(a);
+		ft_putchar(y);
 		a--;
 	}
-}
-
-int	main(void)
-{
-	ft_reverse_print_alphabet();
 }
