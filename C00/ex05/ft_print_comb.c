@@ -1,29 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_print_comb.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: scaglaya <scaglaya@student.42.tr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/10 15:46:01 by scaglaya          #+#    #+#             */
-/*   Updated: 2022/02/13 13:12:00 by scaglaya         ###   ########.fr       */
+/*   Created: 2022/02/13 17:24:37 by scaglaya          #+#    #+#             */
+/*   Updated: 2022/02/13 17:37:31 by scaglaya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
 
-void	ft_putchar(char x)
+void	ft_putchar(char x, char y, char z)
 {
-	write(1, &x, 1);
-}
+	write(1, &x, 1)
+	write(1, &y, 1)
+	write(1, &z, 1)
+	if (x != 7 || y != 8 )
+}	
 
-void	ft_print_alphabet(void)
-{
-	char	a;
-
-	a = 'a';
-	while (a <= 'z')
-	{
-		ft_putchar(a);
-		a++;
-	}
-}
+void 
