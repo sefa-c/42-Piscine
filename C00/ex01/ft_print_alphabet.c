@@ -6,7 +6,7 @@
 /*   By: scaglaya <scaglaya@student.42.tr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/14 21:54:38 by scaglaya          #+#    #+#             */
-/*   Updated: 2022/02/14 22:07:39 by scaglaya         ###   ########.fr       */
+/*   Updated: 2022/02/14 22:15:58 by scaglaya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -26,9 +26,4 @@ void	ft_print_alphabet(void)
 		ft_putchar(y);
 		y++;
 	}
-}
-
-int	main(void)
-{
-	ft_print_alphabet();
 }
