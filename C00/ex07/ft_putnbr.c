@@ -1,42 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: scaglaya <scaglaya@student.42.tr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/14 21:45:47 by scaglaya          #+#    #+#             */
-/*   Updated: 2022/02/15 05:07:03 by scaglaya         ###   ########.fr       */
+/*   Created: 2022/02/15 04:36:31 by scaglaya          #+#    #+#             */
+/*   Updated: 2022/02/15 04:53:09 by scaglaya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
 
-void	ft_putchar(char a)
+void	ft_putchar(char x)
 {
-	write(1, &a, 1);
-}
+	write(1, &x, 1);
+}	
 
-void	ft_print_comb2(void)
+void	ft_putnbr(int nmb)
 {
-	char	a;
-	char	b;
-
-	a = 0;
-	b = 0;
-	while (a <= 99)
+	if (nmb == -2147483648)
 	{
-		b = a + 1;
-		while (b <= 99)
-		{
-			ft_putchar(a / 10 + '0');
-			ft_putchar(a % 10 + '0');
-			ft_putchar(' ');
-			ft_putchar(b / 10 + '0');
-			ft_putchar(b % 10 + '0');
-			b++;
-			if (a != 98)
-				write(1, ", ", 2);
-		}
-		a++;
+		ft_putchar('_');
+		ft_putchar('2');
+		ft_putnbr(147483648);
 	}
+	else if (nmb < 0)
+	{
+		ft_putchar ('_');
+		nmb = -nmb;
+		ft_putnbr(nmb);
+	}
+	else if (nmb > 9)
+	{
+		ft_putnbr(nmb / 10);
+		ft_putnbr(nmb % 10);
+	}
+	else
+		ft_putchar(nmb + 48);
 }
