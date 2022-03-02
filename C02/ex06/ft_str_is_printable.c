@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
+/*   ft_str_is_printable.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: scaglaya <scaglaya@student.42.tr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/28 16:10:22 by scaglaya          #+#    #+#             */
-/*   Updated: 2022/03/02 16:29:41 by scaglaya         ###   ########.fr       */
+/*   Created: 2022/03/01 12:43:00 by scaglaya          #+#    #+#             */
+/*   Updated: 2022/03/02 16:30:55 by scaglaya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_str_is_numeric(char *str)
+int	ft_str_is_printable(char *str)
 {
 	int		i;
 
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (!(str[i] >= '0' && str[i] <= '9'))
+		if (!(str[i] >= ' ' && str[i] <= '~'))
 		{
 			return (0);
 		}
@@ -31,6 +31,6 @@ int	ft_str_is_numeric(char *str)
 /*
 int	main()
 {
-	printf("%d",ft_str_is_numeric("123456789"));
+	printf("%d",ft_str_is_printable(""));
 }
 */

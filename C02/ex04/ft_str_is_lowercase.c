@@ -6,7 +6,7 @@
 /*   By: scaglaya <scaglaya@student.42.tr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/28 16:33:54 by scaglaya          #+#    #+#             */
-/*   Updated: 2022/02/28 17:13:26 by scaglaya         ###   ########.fr       */
+/*   Updated: 2022/03/02 16:30:04 by scaglaya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,23 @@
 
 int	ft_str_is_lowercase(char *str)
 {
-	int		i;
-	char	b;
-	
+	int		i;	
+
 	i = 0;
-	while(true)
+	while (str[i] != '\0')
 	{
-		b = str[i];
-		if (b == '\0')
+		if (!(str[i] >= 'a' && str[i] <= 'z'))
 		{
-			return (1);
-		}	
-		if ((b >= 'a' && b <= 'z'))
-		{
-			return (1);
+			return (0);
 		}
 		i++;
 	}
-	return (0);
-}	
+	return (1);
+}
+
+/*
+int	main()
+{
+	printf("%d",ft_str_is_lowercase("")); 
+}
+*/

@@ -1,36 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: scaglaya <scaglaya@student.42.tr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/28 16:10:22 by scaglaya          #+#    #+#             */
-/*   Updated: 2022/03/02 16:29:41 by scaglaya         ###   ########.fr       */
+/*   Created: 2022/03/01 15:10:25 by scaglaya          #+#    #+#             */
+/*   Updated: 2022/03/02 16:17:37 by scaglaya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_str_is_numeric(char *str)
+char	*ft_strlowcase(char *str)
 {
 	int		i;
 
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (!(str[i] >= '0' && str[i] <= '9'))
+		if ((str[i] >= 'A' && str[i] <= 'Z'))
 		{
-			return (0);
+			str[i] = str[i] + 32;
 		}
 		i++;
 	}
-	return (1);
+	return (str);
 }
 
 /*
 int	main()
 {
-	printf("%d",ft_str_is_numeric("123456789"));
+	char a[] = "AYATO";
+	printf("%s",ft_strlowcase(a));
 }
 */
